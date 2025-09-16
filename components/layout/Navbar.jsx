@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Logo from '../../assets/images/milkingn_logo.png';
+import PartnerLogo from '../../assets/images/maggemane_logo.png';
+import MobileMenuIcon from '../../assets/icons/mobile_sidebar.svg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,13 +10,13 @@ const Navbar = () => {
   return (
     <nav className="w-full bg-white shadow-lg fixed top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-16">
           {/* Left Logo */}
           <div className="flex-shrink-0">
             <img
-              src="/assets/images/milkingn_logo.png"
+              src={Logo}
               alt="Milking Logo"
-              className="h-20 w-auto object-contain"
+              className="h-14 w-auto object-contain"
             />
           </div>
 
@@ -41,9 +44,9 @@ const Navbar = () => {
             {/* Right Logo */}
             <div className="hidden md:block flex-shrink-0">
               <img
-                src="/assets/images/maggemane_logo.png"
+                src={PartnerLogo}
                 alt="Partner Logo"
-                className="h-14 w-auto object-contain"
+                className="h-10 w-auto object-contain"
               />
             </div>
 
@@ -53,7 +56,7 @@ const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
             >
               <img
-                src="/assets/icons/mobile_sidebar.svg"
+                src={MobileMenuIcon}
                 alt="Menu"
                 className="h-8 w-8"
               />

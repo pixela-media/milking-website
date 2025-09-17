@@ -6,7 +6,7 @@ const MaggeMane = ({
   bottomImages = [],
   title = "Experience",
   subtitle = "Maggemane Up Close",
-  description = "Lorem ipsum dolor sit amet consectetur adipiscing eliusmod monlla sit phasellus mollis sit aliquam sit nullam neque."
+  description = "Discover the heart of Maggemane through vivid imagery and stories. Explore our facilities, traditions, and the people who make our company unique. From daily operations to special moments, get an authentic glimpse into our commitment to quality and community."
 }) => {
   // Duplicate arrays for seamless infinite scroll
   const topImagesExtended = [...topImages, ...topImages];

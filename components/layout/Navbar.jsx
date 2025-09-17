@@ -1,11 +1,29 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from '../../assets/images/milkingn_logo.png';
 import PartnerLogo from '../../assets/images/maggemane_logo.png';
 import MobileMenuIcon from '../../assets/icons/mobile_sidebar.svg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+  const scrollToSection = (sectionId) => {
+    // If not on home page, navigate to home first
+    if (location.pathname !== '/') {
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
+    
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+    setIsOpen(false);
+  };
 
   return (
     <nav className="w-full bg-white shadow-lg fixed top-0 left-0 z-50">
@@ -17,6 +35,7 @@ const Navbar = () => {
               src={Logo}
               alt="Milking Logo"
               className="h-14 w-auto object-contain"
+              onClick={() => window.location.href = '/'}
             />
           </div>
 
@@ -25,12 +44,18 @@ const Navbar = () => {
             <Link to="/" className="text-gray-700 hover:text-[#9B5AB3] font-medium">
               Home
             </Link>
-            <Link to="/products" className="text-gray-700 hover:text-[#9B5AB3] font-medium">
+            <button 
+              onClick={() => scrollToSection('products')}
+              className="text-gray-700 hover:text-[#9B5AB3] font-medium"
+            >
               Products
-            </Link>
-            <Link to="/achievements" className="text-gray-700 hover:text-[#9B5AB3] font-medium">
+            </button>
+            <button 
+              onClick={() => scrollToSection('achievements')}
+              className="text-gray-700 hover:text-[#9B5AB3] font-medium"
+            >
               Achievements
-            </Link>
+            </button>
             <Link to="/about-us" className="text-gray-700 hover:text-[#9B5AB3] font-medium">
               About Us
             </Link>
@@ -47,6 +72,7 @@ const Navbar = () => {
                 src={PartnerLogo}
                 alt="Partner Logo"
                 className="h-10 w-auto object-contain"
+                onClick={() => window.location.href = '/visit-us'}
               />
             </div>
 
@@ -75,20 +101,18 @@ const Navbar = () => {
           >
             Home
           </Link>
-          <Link
-            to="/products"
-            className="block text-gray-700 hover:text-[#9B5AB3] font-medium"
-            onClick={() => setIsOpen(false)}
+          <button
+            onClick={() => scrollToSection('products')}
+            className="block w-full text-left text-gray-700 hover:text-[#9B5AB3] font-medium"
           >
             Products
-          </Link>
-          <Link
-            to="/achievements"
-            className="block text-gray-700 hover:text-[#9B5AB3] font-medium"
-            onClick={() => setIsOpen(false)}
+          </button>
+          <button
+            onClick={() => scrollToSection('achievements')}
+            className="block w-full text-left text-gray-700 hover:text-[#9B5AB3] font-medium"
           >
             Achievements
-          </Link>
+          </button>
           <Link
             to="/about-us"
             className="block text-gray-700 hover:text-[#9B5AB3] font-medium"

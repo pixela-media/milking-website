@@ -99,7 +99,7 @@ const Explore = () => {
       />
       <Containers
         title="Why It Matters Globally"
-        subtitle="Lorem ipsum dolor sit amet consectetur adipiscing elit mattis ut pharetra mollis sit aliquam sit nullam."
+        subtitle="Earning the Certified Humane® seal meant meeting global animal welfare benchmarks—every step audited by independent veterinarians and scientists. No shortcuts, just full proof of ethical, stress-free dairy farming."
         containers={globalImpactData}
       />
 

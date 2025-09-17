@@ -63,7 +63,7 @@ const Home = () => {
       </section>
 
       {/* Achievements Section */}
-      <section className="bg-gradient-to-b from-[#F7F2FA] to-[#f7f2fa]/1">
+      <section id="achievements" className="bg-gradient-to-b from-[#F7F2FA] to-[#f7f2fa]/1">
         <Achievements />
       </section>
 
@@ -73,7 +73,7 @@ const Home = () => {
       </section>
 
       {/* Products Section */}
-      <section className="bg-gradient-to-b from-[#F7F2FA] to-[#f7f2fa]/1">
+      <section id="products" className="bg-gradient-to-b from-[#F7F2FA] to-[#f7f2fa]/1">
         <OurProducts />
       </section>
 

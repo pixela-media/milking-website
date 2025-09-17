@@ -21,7 +21,7 @@ const Values = () => {
               Our Values
             </h3>
             <p className="text-gray-600 font-primary leading-relaxed">
-              Stay connected with your team and make quick decisions wherever you are.
+              Compassion • Integrity • Purity • Innovation • Sustainability
             </p>
           </div>
 
@@ -36,7 +36,7 @@ const Values = () => {
               Our Mission
             </h3>
             <p className="text-gray-600 font-primary leading-relaxed">
-              Get a complete sales dashboard in the cloud. See activity, revenue and social metrics all in one place.
+              To deliver wholesome dairy products from ethically raised cows, ensuring safety, taste and transparency in every drop.
             </p>
           </div>
 
@@ -51,7 +51,7 @@ const Values = () => {
               Our Vision
             </h3>
             <p className="text-gray-600 font-primary leading-relaxed">
-              Our calendar lets you know what is happening with customer and projects so you
+              To be the gold standard in dairy trusted by families everywhere for ethical practices, premium quality, and a healthier tomorrow.
             </p>
           </div>
 

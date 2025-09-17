@@ -1,5 +1,6 @@
 import React from 'react';
 import PrimaryButton from '../ui/PrimaryButton';
+import { Link } from 'react-router-dom';
 
 const Gallery = ({ 
   images = [], 
@@ -24,7 +25,9 @@ const Gallery = ({
           {/* Primary Button - Only show on home page */}
           {showPrimaryButton && (
             <div className="flex justify-center mb-12">
+              <Link to="/visit-us">
               <PrimaryButton>Visit Tour</PrimaryButton>
+              </Link>
             </div>
           )}
         </div>

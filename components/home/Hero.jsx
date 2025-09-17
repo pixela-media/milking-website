@@ -1,10 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import PrimaryButton from '../ui/PrimaryButton';
 import Slide1 from '../../assets/images/carousel/slide1.png';
+import { useLocation } from 'react-router-dom';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  
+  const location = useLocation();
+
+  const scrollToSection = (sectionId) => {
+    // If not on home page, navigate to home first
+    if (location.pathname !== '/') {
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
+
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   const slides = [
     {
       image: Slide1,
@@ -50,9 +68,8 @@ const Hero = () => {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentSlide ? 'opacity-100' : 'opacity-0'
-          }`}
+          className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'
+            }`}
         >
           <img
             src={slide.image}
@@ -72,8 +89,8 @@ const Hero = () => {
           <p className="text-lg md:text-xl font-cursive mb-8 max-w-3xl">
             {slides[currentSlide].subtitle}
           </p>
-          <PrimaryButton size="large">
-            Explore Now
+          <PrimaryButton size="large" onClick={() => scrollToSection('products')}>
+              Explore Now
           </PrimaryButton>
         </div>
       </div>
@@ -84,9 +101,8 @@ const Hero = () => {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-              index === currentSlide ? 'bg-white' : 'bg-white/50'
-            }`}
+            className={`w-3 h-3 rounded-full transition-colors duration-300 ${index === currentSlide ? 'bg-white' : 'bg-white/50'
+              }`}
           />
         ))}
       </div>

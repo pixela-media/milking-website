@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Images
 import MilkingLogo from '../../assets/images/milkingn_logo.png';
@@ -29,9 +30,9 @@ const Footer = () => {
               />
             </div>
             <p className="text-gray-600 font-secondary text-sm leading-relaxed mb-6">
-              Lorem ipsum dolor sit amet, consectetur cdolor col adipiscing elit.
+              Milking delivers fresh, pure dairy products directly from our farm to your doorstep. Experience the taste of nature with our range of milk, paneer, curd, butter, and ghee. Quality and freshness, always.
             </p>
-            
+
             {/* Social Media Icons */}
             <div className="flex space-x-3">
               <a
@@ -143,44 +144,36 @@ const Footer = () => {
             </h3>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/explore"
                   className="text-gray-600 font-secondary text-sm hover:text-[#9B5AB3] transition-colors duration-300"
                 >
-                  Blog
-                </a>
+                  Explore
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="about-us"
                   className="text-gray-600 font-secondary text-sm hover:text-[#9B5AB3] transition-colors duration-300"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/visit-us"
                   className="text-gray-600 font-secondary text-sm hover:text-[#9B5AB3] transition-colors duration-300"
                 >
-                  Help Centre
-                </a>
+                  Visit Us
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="text-gray-600 font-secondary text-sm hover:text-[#9B5AB3] transition-colors duration-300"
-                >
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
+                <Link
+                  to="contact-us"
                   className="text-gray-600 font-secondary text-sm hover:text-[#9B5AB3] transition-colors duration-300"
                 >
                   Support
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

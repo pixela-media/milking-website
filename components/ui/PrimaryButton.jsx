@@ -31,7 +31,7 @@ const PrimaryButton = ({
     }
 
     const buttonStyles = {
-        background: 'linear-gradient(to bottom, #7C4098, #9B5AB3)',
+        background: 'linear-gradient(to top, #7C4098, #9B5AB3)',
         border: 'none',
         borderRadius: '8px',
         color: 'white',

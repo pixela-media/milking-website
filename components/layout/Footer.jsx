@@ -15,7 +15,7 @@ import MessageIcon from '../../assets/icons/footer_message_icon.svg';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-50 py-12 px-10">
+    <footer className="bg-[#F7F2FA] py-12 px-10">
       <div className="max-w-7xl mx-auto">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-8">

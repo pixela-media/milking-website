@@ -31,10 +31,10 @@ const Navbar = () => {
             <Link to="/achievements" className="text-gray-700 hover:text-[#9B5AB3] font-medium">
               Achievements
             </Link>
-            <Link to="/aboutus" className="text-gray-700 hover:text-[#9B5AB3] font-medium">
+            <Link to="/about-us" className="text-gray-700 hover:text-[#9B5AB3] font-medium">
               About Us
             </Link>
-            <Link to="/contact" className="text-gray-700 hover:text-[#9B5AB3] font-medium">
+            <Link to="/contact-us" className="text-gray-700 hover:text-[#9B5AB3] font-medium">
               Contact
             </Link>
           </div>
@@ -90,14 +90,14 @@ const Navbar = () => {
             Achievements
           </Link>
           <Link
-            to="/aboutus"
+            to="/about-us"
             className="block text-gray-700 hover:text-[#9B5AB3] font-medium"
             onClick={() => setIsOpen(false)}
           >
             About Us
           </Link>
           <Link
-            to="/contact"
+            to="/contact-us"
             className="block text-gray-700 hover:text-[#9B5AB3] font-medium"
             onClick={() => setIsOpen(false)}
           >

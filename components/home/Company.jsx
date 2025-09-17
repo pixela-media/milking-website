@@ -4,9 +4,9 @@ import Company1 from '../../assets/images/other/company1.jpg';
 import Company2 from '../../assets/images/other/company2.jpg';
 import Company3 from '../../assets/images/other/company3.jpg';
 
-const Company = () => {
+const Company = ({page = 'home'}) => {
   return (
-    <div className="py-16 px-4">
+    <div className="my-8 py-16 px-10">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -15,7 +15,13 @@ const Company = () => {
             Company Background
           </h2>
           <div className="flex justify-center mb-8">
-            <PrimaryButton className='font-primary px-8'>View More</PrimaryButton>
+            {page === 'home' ? (
+              <PrimaryButton className='font-primary px-8'>View More</PrimaryButton>
+            ) : (
+              <p className="text-gray-600 max-w-3xl mx-auto text-center font-primary leading-relaxed">
+                Founded by Dr. M. C. Rangaswamy, a nationally awarded farmer-entrepreneur, Milking was born from a vision to revolutionize Indian dairy with science, ethics, and compassion. At our Maggemane farm, cows are family not machines. Our mission is to set new benchmarks for animal welfare and milk purity, while our vision is to make ethical dairy the new standard across India.
+              </p>
+            )}
           </div>
         </div>
 

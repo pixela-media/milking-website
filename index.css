@@ -1,8 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "tailwindcss";
 
-@theme{
+@theme {
     --font-primary: 'Poppins', sans-serif;
     --font-secondary: 'Outfit', sans-serif;
     --font-cursive: 'Caveat', sans-serif;
+}
+
+@keyframes scroll-left-slow {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scroll-right-fast {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animate-scroll-left-slow {
+    animation: scroll-left-slow 40s linear infinite;
+}
+
+.animate-scroll-right-fast {
+    animation: scroll-right-fast 25s linear infinite;
+}
+
+/* Pause animation on hover for better UX */
+.animate-scroll-left-slow:hover,
+.animate-scroll-right-fast:hover {
+    animation-play-state: paused;
+}
+
+/* Smooth scrolling for better performance */
+.animate-scroll-left-slow,
+.animate-scroll-right-fast {
+    will-change: transform;
 }

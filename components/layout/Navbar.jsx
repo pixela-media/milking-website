@@ -31,7 +31,7 @@ const Navbar = () => {
             <Link to="/achievements" className="text-gray-700 hover:text-[#9B5AB3] font-medium">
               Achievements
             </Link>
-            <Link to="/aboutus" className="text-gray-700 hover:text-[#9B5AB3] font-medium">
+            <Link to="/about-us" className="text-gray-700 hover:text-[#9B5AB3] font-medium">
               About Us
             </Link>
             <Link to="/contact" className="text-gray-700 hover:text-[#9B5AB3] font-medium">

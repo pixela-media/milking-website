@@ -46,7 +46,7 @@ const Gallery = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <p className="text-[#9B5AB3] font-cursive text-xl mb-4">Gallery</p>
+          <p className="text-[#9B5AB3] font-cursive font-extrabold text-2xl mb-4">Gallery</p>
           <h2 className="text-3xl md:text-4xl font-bold font-secondary text-gray-800 mb-6">
             Moments at Maggemane
           </h2>

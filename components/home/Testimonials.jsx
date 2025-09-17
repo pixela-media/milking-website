@@ -68,7 +68,7 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="text-[#9B5AB3] font-cursive text-xl mb-4">Testimonials</p>
+          <p className="text-[#9B5AB3] font-cursive font-extrabold text-2xl mb-4">Testimonials</p>
           <h2 className="text-3xl md:text-4xl font-bold font-secondary text-gray-800">
             What our clients have to say
           </h2>

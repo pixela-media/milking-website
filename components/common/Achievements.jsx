@@ -19,7 +19,7 @@ const Achievements = () => {
     {
       icon:  PCIImage,
       title: 'PCI RECOGNIZED',
-      subtitle: 'PCI-India Recognized Ethical Farming'
+      subtitle: 'PGS-India Recognized Ethical Farming'
     },
     {
       icon: ISOImage,

@@ -34,7 +34,7 @@ const Navbar = () => {
             <img
               src={Logo}
               alt="Milking Logo"
-              className="h-14 w-auto object-contain"
+              className="h-18 w-auto object-contain"
               onClick={() => window.location.href = '/'}
             />
           </div>
@@ -71,8 +71,8 @@ const Navbar = () => {
               <img
                 src={PartnerLogo}
                 alt="Partner Logo"
-                className="h-10 w-auto object-contain"
-                onClick={() => window.location.href = '/visit-us'}
+                className="h-12 w-auto object-contain"
+                onClick={() => window.location.href = '/explore'}
               />
             </div>
 

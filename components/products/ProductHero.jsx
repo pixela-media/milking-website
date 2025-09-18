@@ -41,7 +41,6 @@ const ProductHero = ({ product }) => {
                 alt={product.name}
                 className="w-full h-auto object-contain drop-shadow-2xl transform hover:scale-105 transition-transform duration-300"
               />
-              <div className="absolute inset-0 -z-10"></div>
             </div>
           </div>
 

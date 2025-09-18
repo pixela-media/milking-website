@@ -19,9 +19,8 @@ const ProductDetails = () => {
     {
       title: "Farm Tour",
       description: "Take a virtual tour of our dairy farm and see our ethical practices",
-      thumbnail: "/path/to/thumbnail1.jpg",
-      src: "/path/to/video1.mp4",
-      type: "video"
+      src: "https://www.youtube.com/watch?v=Qc3_exn_F08",
+      type: "youtube"
     },
   ];
 

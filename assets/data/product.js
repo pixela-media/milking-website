@@ -87,10 +87,10 @@ export const products = [
     },
     {
         id: 3,
-        name: 'Cow Milk β (A2 Protein Focus, Pasteurized)',
+        name: 'Cow Milk β (A2 Protein Rich, Pasteurized)',
         slug: 'cow-milk-beta',
         category: 'milk',
-        sizes: ['500 ml', '1 L'],
+        sizes: ['500 ml'],
         image: MilkFrontBetaPasturized,
         imageBack: MilkBackBetaPasturized,
         textColor: '#b26e41',
@@ -119,7 +119,7 @@ export const products = [
     },
     {
         id: 4,
-        name: 'Whole Cow Milk β (A2 Protein Focus)',
+        name: 'Whole Cow Milk β (A2 Protein Rich)',
         slug: 'cow-milk-beta-a2',
         category: 'milk',
         sizes: ['500 ml', '1 L'],

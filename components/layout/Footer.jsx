@@ -42,7 +42,7 @@ const Footer = () => {
                 <img
                   src={FacebookIcon}
                   alt="Facebook"
-                  className="w-4 h-4"
+                  className="w-8 h-8"
                 />
               </a>
               <a
@@ -52,7 +52,7 @@ const Footer = () => {
                 <img
                   src={InstagramIcon}
                   alt="Instagram"
-                  className="w-4 h-4"
+                  className="w-8 h-8"
                 />
               </a>
               <a
@@ -62,7 +62,7 @@ const Footer = () => {
                 <img
                   src={TwitterIcon}
                   alt="Twitter"
-                  className="w-4 h-4"
+                  className="w-8 h-8"
                 />
               </a>
               <a
@@ -72,7 +72,7 @@ const Footer = () => {
                 <img
                   src={LinkedInIcon}
                   alt="LinkedIn"
-                  className="w-4 h-4"
+                  className="w-8 h-8"
                 />
               </a>
               <a
@@ -82,7 +82,7 @@ const Footer = () => {
                 <img
                   src={YoutubeIcon}
                   alt="YouTube"
-                  className="w-4 h-4"
+                  className="w-8 h-8"
                 />
               </a>
             </div>
@@ -100,14 +100,6 @@ const Footer = () => {
                   className="text-gray-600 font-secondary text-sm hover:text-[#9B5AB3] transition-colors duration-300"
                 >
                   Whole Milk
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 font-secondary text-sm hover:text-[#9B5AB3] transition-colors duration-300"
-                >
-                  Paneer
                 </a>
               </li>
               <li>

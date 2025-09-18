@@ -7,15 +7,16 @@ import Achievements from '../components/common/Achievements';
 import CallToAction from '../components/common/CallToAction';
 import Footer from '../components/layout/Footer';
 import Video from '../components/common/Video';
+import Thumbnail from '../assets/images/carousel/slide1.png';
 
 const AboutUs = () => {
   const videoData = [
     {
       title: "Farm Tour",
       description: "Take a virtual tour of our dairy farm and see our ethical practices",
-      thumbnail: "/path/to/thumbnail1.jpg",
-      src: "/path/to/video1.mp4",
-      type: "video"
+      thumbnail: Thumbnail,
+      src: "https://www.youtube.com/watch?v=adzrFymkgNk",
+      type: "youtube"
     },
   ];
 

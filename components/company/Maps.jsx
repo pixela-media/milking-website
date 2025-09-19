@@ -16,7 +16,7 @@ const Maps = () => {
           <div className="relative">
             {/* Google Maps Embed */}
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d144.9537353153179!3d-37.81720997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f3a5e1%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d812.1944764923737!2d76.08319119384943!3d12.68392528752082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5130030b72fff%3A0x6d6f407929350a20!2sMaggemane!5e1!3m2!1sen!2sin!4v1758270918247!5m2!1sen!2sin"
               width="100%"
               height="450"
               style={{ border: 0 }}

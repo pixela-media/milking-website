@@ -1,27 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import PrimaryButton from '../ui/PrimaryButton';
 import Slide1 from '../../assets/images/carousel/slide1.png';
-import { useLocation } from 'react-router-dom';
+import Slide2 from '../../assets/images/carousel/slide2.png';
+import Slide3 from '../../assets/images/carousel/slide3.jpg';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const location = useLocation();
-
-  const scrollToSection = (sectionId) => {
-    // If not on home page, navigate to home first
-    if (location.pathname !== '/') {
-      window.location.href = `/#${sectionId}`;
-      return;
-    }
-
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-  };
 
   const slides = [
     {
@@ -30,24 +15,14 @@ const Hero = () => {
       subtitle: 'India\'s First Certified Humane Dairy Brand committed to revolutionizing dairy farming with ethical practices and premium quality.'
     },
     {
-      image: Slide1,
+      image: Slide2,
       title: 'Pure Quality, Ethical Practices',
       subtitle: 'From farm to table, we ensure the highest standards of quality and animal welfare in every drop of milk we produce.'
     },
     {
-      image: Slide1,
+      image: Slide3,
       title: 'Sustainable Dairy Farming',
       subtitle: 'Leading the way in sustainable and humane dairy farming practices for a better tomorrow.'
-    },
-    {
-      image: Slide1,
-      title: 'Premium Dairy Products',
-      subtitle: 'Experience the difference with our range of premium dairy products crafted with care and precision.'
-    },
-    {
-      image: Slide1,
-      title: 'Innovation in Dairy',
-      subtitle: 'Combining traditional values with modern technology to deliver the finest dairy experience.'
     }
   ];
 
@@ -76,7 +51,7 @@ const Hero = () => {
             alt={`Hero ${index + 1}`}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-black/10"></div>
         </div>
       ))}
 
@@ -89,9 +64,11 @@ const Hero = () => {
           <p className="text-lg md:text-xl font-cursive mb-8 max-w-3xl">
             {slides[currentSlide].subtitle}
           </p>
-          <PrimaryButton size="large" onClick={() => scrollToSection('products')}>
+          <Link to="/explore">
+          <PrimaryButton size="large">
               Explore Now
           </PrimaryButton>
+          </Link>
         </div>
       </div>
 
@@ -101,7 +78,7 @@ const Hero = () => {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full transition-colors duration-300 ${index === currentSlide ? 'bg-white' : 'bg-white/50'
+            className={`w-3 h-3 rounded-full transition-colors duration-300 ${index === currentSlide ? 'bg-white' : 'bg-white/10'
               }`}
           />
         ))}

@@ -13,11 +13,11 @@ const MaggeMane = ({
   const bottomImagesExtended = [...bottomImages, ...bottomImages];
 
   return (
-    <div className="mt-10 py-16 px-4">
-      <div className="max-w-6xl mx-auto">
+    <div className="mt-10 py-16">
+      <div className="w-full">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h3 className="text-2xl md:text-3xl font-bold font-secondary text-gray-800 mb-2">
+          <h3 className="text-3xl md:text-4xl font-bold font-secondary text-gray-800 mb-2">
             {title}
           </h3>
           <h2 className="text-3xl md:text-4xl font-bold font-secondary text-gray-800 mb-4">
@@ -36,7 +36,7 @@ const MaggeMane = ({
               {topImagesExtended.map((image, index) => (
                 <div
                   key={`top-${index}`}
-                  className="flex-shrink-0 w-64 h-40 mx-2"
+                  className="flex-shrink-0 w-64 h-44 mx-2"
                 >
                   <img
                     src={image.src}
@@ -54,7 +54,7 @@ const MaggeMane = ({
               {bottomImagesExtended.map((image, index) => (
                 <div
                   key={`bottom-${index}`}
-                  className="flex-shrink-0 w-64 h-40 mx-2"
+                  className="flex-shrink-0 w-64 h-44 mx-2"
                 >
                   <img
                     src={image.src}

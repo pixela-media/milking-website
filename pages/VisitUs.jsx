@@ -9,6 +9,14 @@ import Gallery3 from '../assets/images/gallery/gallery3.png';
 import Gallery4 from '../assets/images/gallery/gallery4.jpg';
 import Gallery5 from '../assets/images/gallery/gallery5.jpg';
 import Gallery6 from '../assets/images/gallery/gallery6.png';
+import Company1 from '../assets/images/other/company1.jpg';
+import Company2 from '../assets/images/other/company2.jpg';
+import Company3 from '../assets/images/other/company3.jpg';
+import Company4 from '../assets/images/other/company4.png';
+import Company5 from '../assets/images/other/company5.png';
+import Company6 from '../assets/images/other/company6.png';
+import Company7 from '../assets/images/other/company7.png';
+
 import Video from '../components/common/Video';
 import ContactForm from '../components/common/ContactForm';
 import Footer from '../components/layout/Footer';
@@ -72,21 +80,27 @@ const VisitUs = () => {
   const topRowImages = [
     { src: Gallery1, alt: 'Farm view 1' },
     { src: Gallery2, alt: 'Farm view 2' },
-    { src: Gallery3, alt: 'Farm view 3' },
+    { src: Company1, alt: 'Farm view 3' },
     { src: Gallery4, alt: 'Farm view 4' },
+    { src: Company2, alt: 'Farm view 4' },
+    { src: Company4, alt: 'Farm view 4' },
+    { src: Company6, alt: 'Farm view 4' },
   ];
 
   const bottomRowImages = [
     { src: Gallery5, alt: 'Cows 1' },
     { src: Gallery6, alt: 'Cows 2' },
-    { src: Gallery1, alt: 'Cows 3' },
+    { src: Gallery3, alt: 'Cows 3' },
     { src: Gallery2, alt: 'Cows 4' },
+    { src: Company3, alt: 'Cows 4' },
+    { src: Company5, alt: 'Cows 4' },
+    { src: Company7, alt: 'Cows 4' },
   ];
 
   return (
-    <div>
+    <div className='px-0 w-full'>
       <Navbar />
-      <section className="bg-gradient-to-b from-[#F7F2FA] to-[#f7f2fa]/1">
+      <section className="bg-gradient-to-b from-[#F7F2FA] to-[#f7f2fa]/1 w-full">
         <MaggeMane 
         topImages={topRowImages}
         bottomImages={bottomRowImages}
@@ -96,7 +110,7 @@ const VisitUs = () => {
         <Gallery
           images={galleryImages}
           showPrimaryButton={false}
-          showViewMoreButton={true}
+          showViewMoreButton={false}
         />
       </section>
       <section className="bg-white">

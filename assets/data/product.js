@@ -26,11 +26,11 @@ export const products = [
         name: 'Whole Cow Milk',
         slug: 'whole-cow-milk',
         category: 'milk',
-        sizes: ['500 ml', '1 L'],
+        sizes: ['500 ml'],
         image: WholeMilkFront,
         imageBack: WholeMilkBack,
         textColor: '#4CA190',
-        horizantalBackground: 'bg-gradient-to-r from-[#4DAC99] to-[#4CA190]',
+        horizantalBackground: 'bg-gradient-to-r from-[#4DAC99]/80 to-[#4CA190]/80',
         verticalBackground: 'bg-gradient-to-b from-[#4CA190]/80 via-[#4CA190]/1 to-[#4CA190]/80',
         features: [
             {
@@ -58,11 +58,11 @@ export const products = [
         name: 'Cow Milk (Pasteurized)',
         slug: 'cow-milk',
         category: 'milk',
-        sizes: ['500 ml', '1 L'],
+        sizes: ['500 ml'],
         image: MilkFront,
         imageBack: MilkBack,
         textColor: '#B39740',
-        horizantalBackground: 'bg-gradient-to-r from-[#D7BD61] to-[#B39740]',
+        horizantalBackground: 'bg-gradient-to-r from-[#D7BD61]/80 to-[#B39740]/80',
         verticalBackground: 'bg-gradient-to-b from-[#D7BD61]/80 via-[#D7BD61]/1 to-[#B39740]/80',
         features: [
             {
@@ -94,7 +94,7 @@ export const products = [
         image: MilkFrontBetaPasturized,
         imageBack: MilkBackBetaPasturized,
         textColor: '#b26e41',
-        horizantalBackground: 'bg-gradient-to-r from-[#d69469] to-[#b26e41]',
+        horizantalBackground: 'bg-gradient-to-r from-[#d69469]/80 to-[#b26e41]/80',
         verticalBackground: 'bg-gradient-to-b from-[#d69469]/80 via-[#d69469]/1 to-[#b26e41]/80',
         features: [
             {
@@ -122,11 +122,11 @@ export const products = [
         name: 'Whole Cow Milk β (A2 Protein Rich)',
         slug: 'cow-milk-beta-a2',
         category: 'milk',
-        sizes: ['500 ml', '1 L'],
+        sizes: ['500 ml'],
         image: MilkFrontBeta,
         imageBack: MilkBackBeta,
         textColor: '#907391',
-        horizantalBackground: 'bg-gradient-to-r from-[#b195b2] to-[#907391]',
+        horizantalBackground: 'bg-gradient-to-r from-[#b195b2]/80 to-[#907391]/80',
         verticalBackground: 'bg-gradient-to-b from-[#b195b2]/80 via-[#b195b2]/1 to-[#907391]/80',
         features: [
             {
@@ -158,7 +158,7 @@ export const products = [
         image: GheeJar,
         imageBack: GheeJar,
         textColor: '#C2A756',
-        horizantalBackground: 'bg-gradient-to-r from-[#D9BD6A] to-[#C2A756]',
+        horizantalBackground: 'bg-gradient-to-r from-[#D9BD6A]/80 to-[#C2A756]/80',
         verticalBackground: 'bg-gradient-to-b from-[#D9BD6A]/80 via-[#D9BD6A]/1 to-[#C2A756]/80',
         features: [
             {
@@ -190,7 +190,7 @@ export const products = [
         image: Paneer,
         imageBack: Paneer,
         textColor: '#4B4B8C',
-        horizantalBackground: 'bg-gradient-to-r from-[#7C6FB2] to-[#4B4B8C]',
+        horizantalBackground: 'bg-gradient-to-r from-[#7C6FB2]/80 to-[#4B4B8C]/80',
         verticalBackground: 'bg-gradient-to-b from-[#7C6FB2]/80 via-[#7C6FB2]/1 to-[#4B4B8C]/80',
         features: [
             {
@@ -222,7 +222,7 @@ export const products = [
         image: ProCurdFront,
         imageBack: ProCurdBack,
         textColor: '#7c924a',
-        horizantalBackground: 'bg-gradient-to-r from-[#bbcf8c] to-[#7c924a]',
+        horizantalBackground: 'bg-gradient-to-r from-[#bbcf8c]/80 to-[#7c924a]/80',
         verticalBackground: 'bg-gradient-to-b from-[#bbcf8c]/80 via-[#bbcf8c]/1 to-[#7c924a]/80',
         features: [
             {
@@ -257,7 +257,7 @@ export const products = [
         image: CurdA2Front,
         imageBack: CurdA2Back,
         textColor: '#b67e3a',
-        horizantalBackground: 'bg-gradient-to-r from-[#ebbf81] to-[#b67e3a]',
+        horizantalBackground: 'bg-gradient-to-r from-[#ebbf81]/80 to-[#b67e3a]/80',
         verticalBackground: 'bg-gradient-to-b from-[#ebbf81]/80 via-[#ebbf81]/1 to-[#b67e3a]/80',
         features: [
             {

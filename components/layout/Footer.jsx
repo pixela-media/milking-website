@@ -36,7 +36,7 @@ const Footer = () => {
             {/* Social Media Icons */}
             <div className="flex space-x-3">
               <a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61578945691715"
                 className="w-8 h-8 bg-[#9B5AB3] rounded flex items-center justify-center hover:bg-[#7C4098] transition-colors duration-300"
               >
                 <img
@@ -46,7 +46,7 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/milking.org.in/"
                 className="w-8 h-8 bg-[#9B5AB3] rounded flex items-center justify-center hover:bg-[#7C4098] transition-colors duration-300"
               >
                 <img
@@ -56,7 +56,7 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="#"
+                href="https://x.com/Milking_dairy"
                 className="w-8 h-8 bg-[#9B5AB3] rounded flex items-center justify-center hover:bg-[#7C4098] transition-colors duration-300"
               >
                 <img
@@ -66,7 +66,7 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/108628770/admin/page-posts/published/"
                 className="w-8 h-8 bg-[#9B5AB3] rounded flex items-center justify-center hover:bg-[#7C4098] transition-colors duration-300"
               >
                 <img
@@ -76,7 +76,7 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/@Milking-org-in"
                 className="w-8 h-8 bg-[#9B5AB3] rounded flex items-center justify-center hover:bg-[#7C4098] transition-colors duration-300"
               >
                 <img
@@ -96,7 +96,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#"
+                  href="/product/whole-cow-milk"
                   className="text-gray-600 font-secondary text-sm hover:text-[#9B5AB3] transition-colors duration-300"
                 >
                   Whole Milk
@@ -104,7 +104,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/product/ρ-curd-(probiotic-rich)"
                   className="text-gray-600 font-secondary text-sm hover:text-[#9B5AB3] transition-colors duration-300"
                 >
                   Curd
@@ -112,15 +112,15 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/product/malai-paneer"
                   className="text-gray-600 font-secondary text-sm hover:text-[#9B5AB3] transition-colors duration-300"
                 >
-                  Butter
+                  Paneer
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/product/cow-ghee"
                   className="text-gray-600 font-secondary text-sm hover:text-[#9B5AB3] transition-colors duration-300"
                 >
                   Ghee

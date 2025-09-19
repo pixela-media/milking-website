@@ -72,7 +72,7 @@ const Navbar = () => {
                 src={PartnerLogo}
                 alt="Partner Logo"
                 className="h-12 w-auto object-contain"
-                onClick={() => window.location.href = '/explore'}
+                onClick={() => window.location.href = '/visit-us'}
               />
             </div>
 

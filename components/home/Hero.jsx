@@ -75,7 +75,7 @@ const Hero = () => {
           <h1 className="text-4xl md:text-5xl font-bold font-secondary mb-6">
             {slides[currentSlide].title}
           </h1>
-          <p className="text-lg md:text-xl font-cursive mb-8 max-w-3xl">
+          <p className="text-xl md:text-2xl font-cursive mb-8 max-w-3xl">
             {slides[currentSlide].subtitle}
           </p>
           <Link to="/explore">

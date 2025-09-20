@@ -7,7 +7,7 @@ const Founder = () => {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <p className="text-[#9B5AB3] font-cursive text-xl mb-2">Founder</p>
+          <p className="text-[#9B5AB3] font-cursive text-2xl font-bold mb-2">Founder</p>
           <h2 className="text-3xl md:text-4xl font-bold font-secondary text-gray-800 mb-6">
             The Visionary Behind Milking
           </h2>

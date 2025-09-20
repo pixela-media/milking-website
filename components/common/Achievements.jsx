@@ -33,7 +33,7 @@ const Achievements = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <p className="text-[#9B5AB3] font-cursive text-xl mb-2">Achievements</p>
+          <p className="text-[#9B5AB3] font-cursive text-2xl font-bold mb-2">Achievements</p>
           <h2 className="text-3xl md:text-4xl font-bold font-secondary text-gray-800 mb-4">
             Setting New Standards in Indian Dairy
           </h2>

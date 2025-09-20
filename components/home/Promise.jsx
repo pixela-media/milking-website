@@ -19,7 +19,7 @@ const Promise = () => {
     {
       icon: P3,
       title: '100% Pure Milk',
-      description: 'Our milk is unadulterated—no artificial additives, hormones, or antibiotics. From healthy, stress-free cows, ensuring nutrient integrity and taste in every drop. Purity you can trust.)'
+      description: 'Our milk is unadulterated—no artificial additives, hormones, or antibiotics. From healthy, stress-free cows, ensuring nutrient integrity and taste in every drop. Purity you can trust.'
     },
     {
       icon: P4,

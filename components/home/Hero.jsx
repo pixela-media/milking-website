@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PrimaryButton from '../ui/PrimaryButton';
-import Slide1 from '../../assets/images/carousel/slide1.png';
+import Slide1Video from '../../assets/videos/slide1.mp4'; 
 import Slide2 from '../../assets/images/carousel/slide2.png';
 import Slide3 from '../../assets/images/carousel/slide3.jpg';
 import { Link } from 'react-router-dom';
@@ -10,17 +10,20 @@ const Hero = () => {
 
   const slides = [
     {
-      image: Slide1,
+      type: 'video',
+      media: Slide1Video,
       title: 'Milking is rewriting India\'s dairy story.',
       subtitle: 'India\'s First Certified Humane Dairy Brand committed to revolutionizing dairy farming with ethical practices and premium quality.'
     },
     {
-      image: Slide2,
+      type: 'image',
+      media: Slide2,
       title: 'Pure Quality, Ethical Practices',
       subtitle: 'From farm to table, we ensure the highest standards of quality and animal welfare in every drop of milk we produce.'
     },
     {
-      image: Slide3,
+      type: 'image',
+      media: Slide3,
       title: 'Sustainable Dairy Farming',
       subtitle: 'Leading the way in sustainable and humane dairy farming practices for a better tomorrow.'
     }
@@ -29,7 +32,7 @@ const Hero = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    }, 5000);
+    }, 8000);
     return () => clearInterval(timer);
   }, [slides.length]);
 
@@ -39,18 +42,29 @@ const Hero = () => {
 
   return (
     <div className="relative h-screen overflow-hidden">
-      {/* Carousel Images */}
+      {/* Carousel Media */}
       {slides.map((slide, index) => (
         <div
           key={index}
           className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'
             }`}
         >
-          <img
-            src={slide.image}
-            alt={`Hero ${index + 1}`}
-            className="w-full h-full object-cover"
-          />
+          {slide.type === 'video' ? (
+            <video
+              src={slide.media}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            />
+          ) : (
+            <img
+              src={slide.media}
+              alt={`Hero ${index + 1}`}
+              className="w-full h-full object-cover"
+            />
+          )}
           <div className="absolute inset-0 bg-black/10"></div>
         </div>
       ))}

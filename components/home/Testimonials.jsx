@@ -6,34 +6,34 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Stephanie Powell',
-      position: 'VP of Finance',
+      name: 'Ranjini H K',
+      position: 'Whole Cow Milk Buyer',
       rating: 5,
-      text: 'Lorem ipsum dolor sit amet dolor sit consectetur eget maecenas sapien fusce egestas risus purus suspendisse turpis volutpat ornare',
+      text: 'As a mother, I’ve finally found milk I can trust. Milking’s Whole Cow Milk feels pure, fresh, and safe for my kids every single day.',
       avatar: '/assets/images/customer1.jpg'
     },
     {
       id: 2,
-      name: 'John Smith',
-      position: 'CEO',
+      name: 'Latha',
+      position: 'Curd β (A2-rich) Buyer',
       rating: 5,
-      text: 'Exceptional service and outstanding results. The team went above and beyond to deliver exactly what we needed for our business growth.',
+      text: 'The curd is thick, creamy, and so light on the stomach. It reminds me of the traditional homemade taste, but with assured quality.',
       avatar: '/assets/images/customer2.jpg'
     },
     {
       id: 3,
-      name: 'Sarah Johnson',
-      position: 'Marketing Director',
+      name: 'Ranjitha K',
+      position: 'Ghee Buyer',
       rating: 5,
-      text: 'Working with this team has been a game-changer for our company. Their expertise and dedication are truly unmatched in the industry.',
+      text: 'I use Milking Ghee for cooking and festivals — the aroma and purity make every dish feel special and wholesome',
       avatar: '/assets/images/customer3.jpg'
     },
     {
       id: 4,
-      name: 'Michael Chen',
-      position: 'CTO',
+      name: 'Ravikumara',
+      position: 'Paneer Buyer',
       rating: 5,
-      text: 'Innovative solutions and reliable support. They helped us streamline our processes and achieve remarkable efficiency improvements.',
+      text: 'The paneer is so soft and fresh that it melts in the mouth. It cooks beautifully without releasing water, perfect for my family recipes.',
       avatar: '/assets/images/customer4.jpg'
     },
   ];

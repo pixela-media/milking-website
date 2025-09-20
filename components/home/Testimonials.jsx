@@ -85,11 +85,11 @@ const Testimonials = () => {
               >
                 {Array.from({ length: totalSlidesDesktop }).map((_, slideIndex) => (
                   <div key={slideIndex} className="w-full flex-shrink-0">
-                    <div className="grid grid-cols-3 gap-8 px-12 py-2">
+                    <div className="grid grid-cols-3 gap-8 px-12 pt-2 pb-5">
                       {testimonials
                         .slice(slideIndex * slidesPerView, (slideIndex + 1) * slidesPerView)
                         .map((testimonial) => (
-                          <div key={testimonial.id} className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                          <div key={testimonial.id} className="bg-white rounded-xl shadow-xl p-6 hover:shadow-2xl transition-shadow duration-300 border border-[#E1E4ED]">
                             {/* Stars */}
                             <div className="flex justify-start mb-4">
                               {[...Array(testimonial.rating)].map((_, i) => (
@@ -138,7 +138,7 @@ const Testimonials = () => {
               >
                 {testimonials.map((testimonial) => (
                   <div key={testimonial.id} className="w-full flex-shrink-0 px-4">
-                    <div className="bg-white rounded-xl shadow-lg p-6 mx-auto max-w-sm">
+                    <div className="bg-white rounded-xl shadow-lg p-6 mx-auto max-w-sm hover:shadow-2xl transition-shadow duration-300 border border-[#E1E4ED]">
                       {/* Stars */}
                       <div className="flex justify-center mb-4">
                         {[...Array(testimonial.rating)].map((_, i) => (
